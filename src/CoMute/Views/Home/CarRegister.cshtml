@@ -1,0 +1,99 @@
+﻿@{
+    ViewBag.Title = "CarRegister";
+}
+
+<div class="page-content">
+    <!-- Page main content START -->
+    <div class="page-content-wrapper border">
+        <section class="py-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="bg-dark p-4 text-center rounded-3">
+                            <h1 class="text-success m-0">Car Register</h1>
+                            <!-- Breadcrumb -->
+                            <div class="d-flex justify-content-center">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb breadcrumb-dark breadcrumb-dots mb-0">
+                                        <li class="breadcrumb-item"><a href="Index">Home</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Car Register</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pt-4">
+            <div class=" container">
+                <div class="card bg-transparent border rounded-3">
+                    <div class="card-header bg-transparent border-bottom">
+
+                    </div>
+                    <!-- Card body START -->
+                    <div class="card-body">
+                        <!-- Form -->
+                        <form class="row g-4" method="post" asp-page="CreateUser" enctype="multipart/form-data">
+
+                            <!-- First Name -->
+                            <div class="col-md-6">
+                                <label class="form-label text-success ">Departure time</label>
+                                <input type="text" id="Departure time" class="form-control" placeholder="hh:mm" required autofocus  autocomplete="off">
+                            </div>
+
+                            <!-- Last Name -->
+                            <div class="col-md-6">
+                                <label class="form-label text-success "> Expected Arrival time </label>
+                                <input type="text" id=" Expected Arrival time " class="form-control" placeholder=" hh:mm " required autofocus autocomplete="off">
+                            </div>
+
+                            <!--Email Adress-->
+                            <div class="col-md-6">
+                                <label class="form-label text-success ">Origin</label>
+                                <input type="text" id="Origin" class="form-control" placeholder="Origin" required autofocus  autocomplete="off">
+                            </div>
+                            <!--Cellphone number-->
+
+                            <div class="col-md-6">
+                                <label class="form-label text-success "> Days available</label>
+                                <input type="text" id=" Days available" class="form-control" placeholder="0-9" maxlength="1" required autofocus  autocomplete="off">
+                            </div>
+
+
+                            <div class="col-md-6">
+                                <label class="form-label text-success ">Destination</label>
+                                <input type="text" id="Destination" class="form-control" placeholder="KM" required autofocus  autocomplete="off">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label text-success ">Available seats</label>
+                                <input type="text" id="Available seats" class="form-control" placeholder="0-22" maxlength="2" required autofocus  autocomplete="off">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label text-success ">Leader</label>
+                                <input type="text" id="Leader" class="form-control" placeholder="Owner" required autofocus  autocomplete="off">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label text-success "> Notes</label>
+                                <input type="text" id=" Notes" class="form-control" placeholder=" A-Z" required autofocus  autocomplete="off">
+                            </div>
+
+                            <!-- Save button -->
+
+                            <button class="btn btn-success btn-block" type="submit" id="sign-in">Press To Register your car</button>
+
+                        </form>
+                    </div>
+                    <!-- Card body END -->
+                </div>
+                <!-- Edit profile END -->
+
+            </div>
+        </section>
+    </div>
+</div>
+
+@section scripts {
+    <script type="text/javascript" src="~/Content/js/carRegister.js"></script>
+}
